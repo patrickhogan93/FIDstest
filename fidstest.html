@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body {
+    width: 100%;
+    height: auto;
+    background-color: #323232;
+    color: white; 
+    font-family: calibri;
+}
+
+h1   {
+    font-size: 5vh;
+    margin: 5px;
+}
+
+h2 {
+    font-size: 3vh;
+    margin: 5px;
+}
+
+table  {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 2vw;
+    padding-bottom: 6vh;
+}
+
+th, td{
+    padding-left: 0.3em;
+}  
+
+th  {
+    text-align: left;
+    background-color: #646464;
+    border-top: 0.2rem solid white;
+    border-bottom: 0.2rem solid white;
+}
+
+tr:nth-child(odd) {background-color: #414141;}
+
+footer  {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border-top: 0.2rem solid white;
+    border-bottom: 0.2rem solid white;
+    background-color: #646464;
+    padding: 0;
+    padding-right: 1em;
+    text-align: right;
+    
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1><img src="departures.png" alt="Departures Logo"> Departures</h1>
+    </header>
+
+    <table>
+        <colgroup>
+            <col style="width:15%">
+            <col style="width:35%">
+            <col style="width:10%">
+        </colgroup>
+        <tr>
+            <th>Flight</th>
+            <th>Destination</th>
+            <th>STD</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>SI350</td>
+            <td>Southampton</td>
+            <td>12:00</td>
+            <td>Gate info at 11:20</td>
+        </tr>
+        <tr>
+            <td>SI1234</td>
+            <td>Southampton</td>
+            <td>13:10</td>
+            <td>Delayed</td>
+        </tr>
+        <tr>
+            <td>BA6969</td>
+            <td>London Gatwick</td>
+            <td>16:45</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>EZY8746</td>
+            <td>London Gatwick</td>
+            <td>17:00</td>
+            <td>See EasyJet app for info</td>
+        </tr>
+        <tr>
+            <td>BA6971</td>
+            <td>London Gatwick</td>
+            <td>17:15</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>SI1267</td>
+            <td>Southampton</td>
+            <td>17:55</td>
+            <td>Canceled</td>
+        </tr>
+        <tr>
+            <td>LS4452</td>
+            <td>Birmingham</td>
+            <td>19:00</td>
+            <td></td>
+        </tr>
+    </table>
+    <div style=height:40px>
+
+    <footer>
+        <h2 id="demo"></h2>
+
+        <script>
+            var d = new Date();
+            document.getElementById("demo").innerHTML = d;
+        </script>
+    </footer>
+
+</body>
+</html>
